@@ -11,11 +11,11 @@ The Realme C2 is a budget range smartphone from Realme, announced in April 2019.
 2. Backup and Restore
 3. Flash GSI
 4. Screenshots
-5. OTG Works
 
 **Not working**:
 
 1. Decryption
+2. OTG
 
 
 ## Device specifications
@@ -70,8 +70,5 @@ To initialize a shallow clone, which will save even more space, use a command li
 
 Build the TWRP recovery using below command.
 
-    cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_RMX1941-eng; mka recoveryimage
+    cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_rmx1941-eng; mka recoveryimage
 
-## NOTE
-
-Most of the work here is from internet. Thanks to https://github.com/buddi56.
