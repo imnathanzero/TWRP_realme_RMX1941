@@ -120,6 +120,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072       # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Workaround for error copying vendor files to recovery ramdisk
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -154,13 +157,13 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_DEVICE_VERSION := RMX1941_nathan
+TW_DEVICE_VERSION := -nathan_was_here
 TW_MAX_BRIGHTNESS := 2047
-TW_DEFAULT_BRIGHTNESS := 560
+TW_DEFAULT_BRIGHTNESS := 1200
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone1/temp"
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
-TW_TORCH_PATH := "/proc/qcom_flash"
+TW_TORCH_PATH := /proc/qcom_flash
 TW_USE_TOOLBOX := true
 TW_NO_SCREEN_BLANK := true
 TW_NO_BATT_PERCENT := false
@@ -185,8 +188,8 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
 TW_USE_FSCRYPT_POLICY := 1
+TW_INCLUDE_CRYPTO_FBE := true
 
 # Debugging
 TWRP_INCLUDE_LOGCAT := true
