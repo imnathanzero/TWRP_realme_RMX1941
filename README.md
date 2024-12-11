@@ -15,8 +15,7 @@ The Realme C2 is a budget range smartphone from Realme, announced in April 2019.
 6. OTG
 
 **Not working**:
- NONE
-
+1. Lockscreen Decryption
 
 
 ## Device specifications
