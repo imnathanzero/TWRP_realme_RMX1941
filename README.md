@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> **FORCE PUSH AND REBASE**
+> 
+
 TWRP Device Tree for Realme C2
 ===========================================
 
