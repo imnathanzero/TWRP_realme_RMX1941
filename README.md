@@ -1,8 +1,4 @@
-> [!IMPORTANT]
-> **FORCE PUSH AND REBASE**
-> 
-
-TWRP Device Tree for Realme C2
+TWRP Device FORCfor Realme C2
 ===========================================
 
 The Realme C2 is a budget range smartphone from Realme, announced in April 2019.
