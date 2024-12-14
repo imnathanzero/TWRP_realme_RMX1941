@@ -1,4 +1,4 @@
-TWRP Device FORCfor Realme C2
+TWRP Device for Realme C2
 ===========================================
 
 The Realme C2 is a budget range smartphone from Realme, announced in April 2019.
@@ -9,7 +9,7 @@ The Realme C2 is a budget range smartphone from Realme, announced in April 2019.
 - [X] Backup and Restore
 - [X] Flash GSI
 - [X] Screenshots
-- [X] FBE Decryption
+- [X] FBE Decryption (PARTIALLY) 
 - [X] OTG
 - [X] ADB Sideload
 
