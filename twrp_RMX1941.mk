@@ -39,11 +39,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_PRODUCT=RMX1941 \
     TARGET_DEVICE=RMX1941
 
-# HACK: Set vendor patch level
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.build.security_patch=2099-12-31 \
-    ro.bootimage.build.date.utc=0 \
-    ro.build.date.utc=0
+# Bypass anti-rollback ROMs protection
+# Set build date to Jan 1 2009 00:00:00
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.date.utc=1230768000
 
 # Dimen
 TARGET_SCREEN_HEIGHT := 1560
